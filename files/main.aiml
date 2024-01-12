@@ -13,6 +13,10 @@
                 <text>Programming</text>
                 <postback>programming</postback>
             </button>
+            <button>
+                <text>Help in choosing a career?</text>
+                <postback>help choose</postback>
+            </button>
 	    </template>
 	</category>
 	

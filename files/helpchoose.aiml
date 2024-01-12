@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>help choose</pattern>
+        <template>We will now ask you a series of questions to provide suggestions on career paths to consider
+            <br></br>
+            Do you enjoy design but struggle with programming?
+            <button>
+                <text>Yes</text>
+                <postback>web question</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>programming question</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>web question</pattern>
+        <template></template>
+    </category>
+    
+    <category>
+        <pattern>programming question</pattern>
+        <template></template>
+    </category>
+</aiml>
