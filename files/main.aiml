@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <!-- Start of Choosing careers -->
+	<category>
+	    <pattern>YES</pattern>
+	    <template>Are you into design or programming?
+	        <button>
+	            <text>Design</text>
+	            <postback>design</postback>
+            </button>
+            <button>
+                <text>Programming</text>
+                <postback>programming</postback>
+            </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>NO</pattern>
+	    <template>I'm sorry I couldn't help you today</template>
+	</category>
+	
+    <!-- Catch all when no category is matched  -->
+	<category>
+	    <pattern>*</pattern>
+	    <template>I'm sorry what was that?</template>
+	</category>
+</aiml>

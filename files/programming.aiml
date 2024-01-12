@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>programming</pattern>
+	    <template>Lets talk about programming careers!</template>
+	    <think><set name = "topic">prog</set></think>
+	</category>
+	
+	<topic name = "prog">
+	    <category>
+	        <pattern>TELL ME MORE</pattern>
+	        <template>Here is more info on programming careers...</template>
+	    </category>
+	</topic>	
+</aiml>

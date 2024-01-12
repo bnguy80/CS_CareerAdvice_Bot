@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<!-- Case for both -->
+	<category>
+	    <pattern>HI</pattern>
+        <template>Hello, I am a career advice chatbot. Do you need help learning more about careers?</template>
+	</category>
+	
+	<category>
+	    <pattern>HI *</pattern>
+        <template>Hello, I am a career advice chatbot. Do you need help learning more about careers?</template>   
+	</category>
+</aiml>
