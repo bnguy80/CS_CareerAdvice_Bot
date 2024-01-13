@@ -2,12 +2,12 @@
 <aiml version="2.0">
     <category>
         <pattern>help choose</pattern>
-        <template>We will now ask you a series of questions to provide suggestions on career paths to consider
-            <br></br>
-            Do you enjoy design but struggle with programming?
+        <template>We will now ask you a series of questions to provide suggestions on career paths to consider.
+            <br></br><br></br>
+            Are you interested in usability, visual appearance, or layout?
             <button>
                 <text>Yes</text>
-                <postback>web question</postback>
+                <postback>design question</postback>
             </button>
             <button>
                 <text>No</text>
@@ -17,12 +17,98 @@
     </category>
     
     <category>
-        <pattern>web question</pattern>
-        <template></template>
+        <pattern>design question</pattern>
+        <template>Are you interested in creating graphics, logos, and overall appearance of a website?
+            <button>
+                <text>Yes</text>
+                <postback>web designer</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>design question 2</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>design question 2</pattern>
+        <template>Are you interested in handling how a user interacts with a website and how they navigate the site?
+            <button>
+                <text>Yes</text>
+                <postback>ux</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>web developer question</postback>
+            </button>
+        </template>
     </category>
     
     <category>
         <pattern>programming question</pattern>
-        <template></template>
+        <template>Are you interested in working in a development environment?
+            <button>
+                <text>Yes</text>
+                <postback>software question</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>web developer question</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>software question</pattern>
+        <template>Are you interested in coding to design, build, testing, and debugging software?
+            <button>
+                <text>Yes</text>
+                <postback>software application</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>web developer question</postback>
+            </button>
+
+        </template>
+    </category>
+    
+    <category>
+        <pattern>web developer question</pattern>
+        <template>Are you interested in buidling websites, user-facing features, and fuctionalties?
+            <button>
+                <text>Yes</text>
+                <postback>web developer</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>computer architect question</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>computer architect question</pattern>
+        <template>Are you interested in designing and implementing data communication networks, including LAN, WAN, and intranets?
+            <button>
+                <text>Yes</text>
+                <postback>computer network architect</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>no job found</postback>
+            </button>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>no job found</pattern>
+        <template>I'm sorry I could find a job matching your interests
+            <button>
+                <text>Go back to beginning</text>
+                <postback>YES</postback>
+            </button>
+        </template>
     </category>
 </aiml>

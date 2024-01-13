@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	
+	<!-- Careers that are more along the line of design -->
 	<category>
 	    <pattern>design</pattern>
-	    <template>Lets talk about design careers!</template>
-	    <think><set name = "topic">design</set></think>
+	    <template>Lets talk about design careers!
+	        <button>
+	            <text>Web Designer</text>
+	            <postback>web designer</postback>
+            </button>
+            <button>
+                <text>UX/UI Designer</text>
+                <postback>ux</postback>
+            </button>
+            <button>
+                <text>Go back to beginning?</text>
+                <postback>YES</postback>
+            </button>
+	    </template>
 	</category>
 	
-	<topic name = "design">
-	    <category>
-	        <pattern>TELL ME MORE</pattern>
-	        <template>Here is more info  on design careers...</template>
-	    </category>
-	</topic>
+	<category>
+	    <pattern>web designer</pattern>
+	    <template>A web designer is a professional who is responsible for the overall design, layout and functionality of a website. These experts can handle everything from creating a site’s graphics and logo to choosing a color scheme and typeface.
+	        <button>
+	            <text>Learn More</text>
+	            <url>https://www.indeed.com/career/web-designer/salaries</url>
+            </button>
+            <button>
+                <text>Explore other careers?</text>
+                <postback>design</postback>
+            </button>
+	    </template>
+	</category>
+	
+    <category>
+        <pattern>ux</pattern>
+        <template>A UI/UX designer is responsible for both the look and feel of a product, as well as the experience a user has while using it.
+            <button>
+                <text>Learn More</text>
+                <url>https://www.indeed.com/career/user-experience-designer/salaries</url>
+            </button>
+            <button>
+                <text>Explore other careers?</text>
+                <postback>design</postback>
+            </button>
+        </template>
+    </category>
+	
 </aiml>
