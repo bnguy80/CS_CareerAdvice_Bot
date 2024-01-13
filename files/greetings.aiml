@@ -4,11 +4,29 @@
 	<!-- Case for both -->
 	<category>
 	    <pattern>HI</pattern>
-        <template>Hello, I am a career advice chatbot. Do you need help learning more about careers?</template>
+        <template>Hello, I am a career advice chatbot. Do you need help learning more about careers?
+            <button>
+                <text>Yes</text>
+                <postback>YES</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>help</postback>
+            </button>
+        </template>
 	</category>
 	
 	<category>
 	    <pattern>HI *</pattern>
-        <template>Hello, I am a career advice chatbot. Do you need help learning more about careers?</template>   
+        <template>Hello, I am a career advice chatbot. Do you need help learning more about careers?
+            <button>
+                <text>Yes</text>
+                <postback>YES</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>help</postback>
+            </button>
+        </template>   
 	</category>
 </aiml>

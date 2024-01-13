@@ -17,12 +17,50 @@
                 <text>Help in choosing a career?</text>
                 <postback>help choose</postback>
             </button>
+            <button>
+                <text>Help</text>
+                <postback>help</postback>
+            </button>
 	    </template>
 	</category>
 	
 	<category>
 	    <pattern>NO</pattern>
 	    <template>I'm sorry I couldn't help you today</template>
+	</category>
+	
+	<category>
+	    <pattern>help</pattern>
+	    <template>Make an appointment with a career advisor?
+	        <button>
+	            <text>Yes</text>
+	            <postback>appointment</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>no appointment</postback>
+            </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>appointment</pattern>
+	    <template>To make an appointment please call this number: (111)-111-1111
+	        <button>
+	            <text>Go back to beginning</text>
+	            <postback>YES</postback>
+            </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>no appointment</pattern>
+	    <template>I'm sorry we couldn't help
+	        <button>
+	            <text>Go back to beginning</text>
+	            <postback>Yes</postback>
+            </button>
+	    </template>
 	</category>
 	
     <!-- Catch all when no category is matched  -->

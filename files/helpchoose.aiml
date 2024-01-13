@@ -106,8 +106,8 @@
         <pattern>no job found</pattern>
         <template>I'm sorry I could find a job matching your interests
             <button>
-                <text>Go back to beginning</text>
-                <postback>YES</postback>
+                <text>Help</text>
+                <postback>help</postback>
             </button>
         </template>
     </category>
