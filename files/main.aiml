@@ -4,7 +4,7 @@
     <!-- Start of Choosing careers -->
 	<category>
 	    <pattern>YES</pattern>
-	    <template>Are you into design or programming?
+	    <template>Are interested design or programming?
 	        <button>
 	            <text>Design</text>
 	            <postback>design</postback>
